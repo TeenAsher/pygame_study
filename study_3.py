@@ -33,4 +33,6 @@ while True:
             z = random.randrange(1, 10)
             pygame.draw.circle(screen, (255, 250, 100), (x, y), z)
 
+        pygame.mouse.set_visible(False)
+
         pygame.display.update()
