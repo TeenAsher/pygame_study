@@ -10,8 +10,8 @@ pygame.init()
 
 screen = pygame.display.set_mode((640, 480), 0, 32)
 
-color1 = (221, 99, 20)
-color2 = (96, 130, 51)
+color1 = (221, 50, 100)
+color2 = (200, 90, 200)
 factor = 0.
 
 def blend_color(color1, color2, blend_factor):
@@ -32,7 +32,7 @@ while True:
 
         tri = [(0, 120), (639, 100), (639, 140)]
 
-        pygame.draw.polygon(screen, (0, 255, 0), tri)
+        pygame.draw.polygon(screen, (255, 255, 0), tri)
         pygame.draw.circle(screen, (150, 0, 0), (int(factor * 639.), 120), 10)
 
         x, y, = pygame.mouse.get_pos()
