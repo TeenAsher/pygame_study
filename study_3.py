@@ -18,6 +18,11 @@ while True:
             pygame.quit()
             sys.exit()
 
+        if event.type == KEYDOWN:
+            if event.key == K_ESCAPE:
+                pygame.quit()
+                sys.exit()
+
         screen.fill((10, 10, 45))
         pygame.draw.circle(screen, (255, 250, 50), (400, 120), 50)
         pygame.draw.circle(screen, (10, 10, 45), (380, 115), 40)
