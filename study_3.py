@@ -9,7 +9,7 @@ import random
 
 pygame.init()
 
-screen = pygame.display.set_mode((2048, 1080), FULLSCREEN, 32)
+screen = pygame.display.set_mode((1920, 1080), FULLSCREEN, 32)
 
 while True:
 
