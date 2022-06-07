@@ -9,7 +9,7 @@ import random
 
 pygame.init()
 
-screen = pygame.display.set_mode((640, 480), FULLSCREEN, 32)
+screen = pygame.display.set_mode((2048, 1080), FULLSCREEN, 32)
 
 while True:
 
@@ -24,13 +24,13 @@ while True:
                 sys.exit()
 
         screen.fill((10, 10, 45))
-        pygame.draw.circle(screen, (255, 250, 50), (400, 120), 50)
-        pygame.draw.circle(screen, (10, 10, 45), (380, 115), 40)
+        pygame.draw.circle(screen, (255, 250, 50), (1200, 200), 100)
+        pygame.draw.circle(screen, (10, 10, 45), (1150, 200), 90)
 
-        for i in range(150):
-            x = random.randint(0, 640)
-            y = random.randint(0, 480)
-            z = random.randrange(1, 5)
+        for i in range(200):
+            x = random.randint(0, 2047)
+            y = random.randint(0, 1079)
+            z = random.randrange(1, 8)
             pygame.draw.circle(screen, (255, 250, 100), (x, y), z)
 
         pygame.mouse.set_visible(False)
