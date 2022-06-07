@@ -28,7 +28,7 @@ while True:
         pygame.draw.circle(screen, (10, 10, 45), (1150, 200), 90)
 
         for i in range(200):
-            x = random.randint(0, 2047)
+            x = random.randint(0, 1919)
             y = random.randint(0, 1079)
             z = random.randrange(1, 8)
             pygame.draw.circle(screen, (255, 250, 100), (x, y), z)
