@@ -27,10 +27,10 @@ while True:
         pygame.draw.circle(screen, (255, 250, 50), (400, 120), 50)
         pygame.draw.circle(screen, (10, 10, 45), (380, 115), 40)
 
-        for i in range(100):
+        for i in range(150):
             x = random.randint(0, 640)
             y = random.randint(0, 480)
-            z = random.randrange(1, 10)
+            z = random.randrange(1, 5)
             pygame.draw.circle(screen, (255, 250, 100), (x, y), z)
 
         pygame.mouse.set_visible(False)
